@@ -1,0 +1,65 @@
+body{
+    max-width: 500px;
+    margin: auto;
+    background-color: #F1B829;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+span.badge{
+    font-size: 15px;
+}
+
+.flash-button{
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	
+	-moz-animation-name: flash;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { width: 130px; height: 60px; }
+    50% { width: 125px; height: 50px;}
+    100% { width: 130px; height: 60px;}
+    /* 0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; } */
+}
+
+
+@-webkit-keyframes flash {  
+    0% { width: 130px; height: 60px;}
+    50% { width: 125px; height: 50px;}
+    100% { width: 130px; height: 60px;}
+}
+
+
+@-moz-keyframes flash {  
+    0% { width: 130px; height: 60px;}
+    50% { width: 125px; height: 50px;}
+    100% { width: 130px; height: 60px;}
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html, body {
+            background: url('img/level.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat|Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <title>Learn English</title>
+</head>
+
+<body>
+    <div class="container p-5 mt-3" style="font-size: 20px;">
+        Read this text
+        <div class="card">
+            <div class="card-body" id="textnya">
+
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <button class="btn btn-lg btn-warning" onclick="GFG_Fun()">Refresh Text</button>
+            <button class="btn btn-lg btn-success" onclick="startDictation()">Start Speak!</button>
+        </div>
+        Result
+        <div class="card">
+            <div class="card-body" id="resultnya">
+
+            </div>
+        </div>
+        <h3 class="text-success bg-light text-center mt-3" id="right" style="display: none;">You are correct!</h3>
+        <h3 class="text-danger bg-light text-center mt-3" id="wrong" style="display: none;">Wrong, try again!</h3>
+        <div class="text-center mt-3">
+            <button class="btn btn-lg btn-danger" onclick="history.back()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            GFG_Fun();
+        })
+
+
+        var down = document.getElementById('textnya');
+
+        var arr = ["No entry", "Be careful", "Don't be lazy",
+            "Please close the door", "Don’t be angry", "Do not smoke",
+            "Do not park here", "Do not hold this cup",
+            "No smoking", "Watch your head", "Sold out"
+        ];
+
+        function GFG_Fun() {
+            down.innerHTML =
+                arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        function startDictation() {
+
+            if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+                var recognition = new webkitSpeechRecognition();
+
+                recognition.continuous = false;
+                recognition.interimResults = false;
+
+                recognition.lang = "en-US";
+                recognition.start();
+
+                recognition.onresult = function (e) {
+                    document.getElementById('resultnya').innerHTML = e.results[0][0].transcript;
+                    var r = e.results[0][0].transcript;
+                    recognition.stop();
+                    var te = $('#textnya').html();
+                    t = (te+".");
+                    if (t.toLowerCase() == r.toLowerCase()) {
+                        $('#right').show();
+                        $('#wrong').hide();
+                    }else{
+                        $('#right').hide();
+                        $('#wrong').show();
+                    }
+                };
+
+                recognition.onerror = function (e) {
+                    recognition.stop();
+                }
+
+            }
+        }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

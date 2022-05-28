@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html, body {
+            background: url('img/level.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat|Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <title>Learn English</title>
+</head>
+
+<body>
+    <div class="container p-5 mt-2">
+        <h3 class="text-center">Level 3 (Expressing Warning)</h3><br>
+        <a href="#" data-toggle="modal" data-target="#modal1">
+            <div class="card border-light text-white text-center bg-danger mb-2">
+                <div class="card-body">
+                    <h1 class="text-center">Dialogue 1</h1>
+                </div>
+            </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#modal2">
+            <div class="card border-light text-white bg-success text-center mt-4">
+                <div class="card-body">
+                    <h1 class="card-title">Dialogue 2</h1>
+                </div>
+            </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#modal3">
+            <div class="card text-white border-light bg-warning text-center mt-4">
+                <div class="card-body">
+                    <h1 class="card-title">Dialogue 3</h1>
+                </div>
+            </div>
+        </a>
+        <div class="mt-4 float-left">
+                <a href="level3.html">
+                    <button class="btn btn-danger btn-lg">Back</button>
+                </a>
+            </div>
+            <div class="mt-4 float-right">
+                <a href="speak.html">
+                    <button class="btn btn-success flash-button btn-lg">Speak Now!</button>
+                </a>
+            </div>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 1</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    A :”I am so tired. Is the top of the mountain still far?”<a href="#" onclick='speaknow(11);'
+                        class="text-success">🔉</a><br>
+                    B :”Yeah, we need to climb for about six hours from here.”<a href="#" onclick='speaknow(12);'
+                        class="text-success">🔉</a><br>
+                    A :”Come on we can do this.”<a href="#" onclick='speaknow(13);' class="text-success">🔉</a><br>
+                    B :”Watch out! There is a snake!”<a href="#" onclick='speaknow(14);' class="text-success">🔉</a><br>
+                    A :”Oh my God.”<a href="#" onclick='speaknow(15);' class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 2</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    A :"At what time you will go for your trip? tomorrow dear?"<a href="#" onclick='speaknow(21);'
+                        class="text-success">🔉</a><br>
+                    B :“At 7 in the morning.”<a href="#" onclick='speaknow(22);' class="text-success">🔉</a><br>
+                    A :”Take care.<a href="#" onclick='speaknow(23);' class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 3</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    A :”Hey, lets go to mall.”<a href="#" onclick='speaknow(31);' class="text-success">🔉</a><br>
+                    B :”Oke, lets go! What you want to buy?”<a href="#" onclick='speaknow(32);'
+                        class="text-success">🔉</a><br>
+                    A :”Shirt and some cakes.”<a href="#" onclick='speaknow(33);' class="text-success">🔉</a><br>
+                    B :”Hey, this is the shirt you want, but it sold out.”<a href="#" onclick='speaknow(34);'
+                        class="text-success">🔉</a><br>
+                    A :”Unfortunately, I really want it.”<a href="#" onclick='speaknow(35);'
+                        class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function speaknow(d) {
+            var dialM, dialF;
+            switch (d) {
+                case 11:
+                    dialM = "I am so tired. Is the top of the mountain still far?";
+                    break;
+                case 12:
+                    dialM = "Yeah, we need to climb for about six hours from here.";
+                    break;
+                case 13:
+                    dialM = "Come on we can do this.";
+                    break;
+                case 14:
+                    dialM = "Watch out! There is a snake!";
+                    break;
+                case 15:
+                    dialM = "Oh my God.";
+                    break;
+                case 21:
+                    dialM = "At what time you will go for your trip? tomorrow dear?";
+                    break;
+                case 22:
+                    dialF = "At 7 in the morning.";
+                    break;
+                case 23:
+                    dialM = "Take care.";
+                    break;
+                case 31:
+                    dialM = "Hey, lets go to mall.";
+                    break;
+                case 32:
+                    dialF = "Oke, lets go! What you want to buy?";
+                    break;
+                case 33:
+                    dialM = "Shirt and some cakes.";
+                    break;
+                case 34:
+                    dialF = "Hey, this is the shirt you want, but it sold out.";
+                    break;
+                case 35:
+                    dialM = "Unfortunately, I really want it.";
+                    break;
+                default:
+                    dialM = "Please choose the right button!";
+                    break;
+            }
+            responsiveVoice.speak(dialM, "US English Male");
+            responsiveVoice.speak(dialF, "US English Female");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

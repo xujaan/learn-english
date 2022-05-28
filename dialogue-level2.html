@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html, body {
+            background: url('img/level.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat|Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <title>Learn English</title>
+</head>
+
+<body>
+    <div class="container p-5 mt-2">
+        <h3 class="text-center">Level 2 (Short Notification)</h3><br>
+        <a href="#" data-toggle="modal" data-target="#modal1">
+            <div class="card border-light text-white text-center bg-warning mb-2">
+                <div class="card-body">
+                    <h1 class="text-center">Dialogue 1</h1>
+                </div>
+            </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#modal2">
+            <div class="card border-light text-white bg-danger text-center mt-4">
+                <div class="card-body">
+                    <h1 class="card-title">Dialogue 2</h1>
+                </div>
+            </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#modal3">
+            <div class="card text-white border-light bg-success text-center mt-4">
+                <div class="card-body">
+                    <h1 class="card-title">Dialogue 3</h1>
+                </div>
+            </div>
+        </a>
+        <div class="mt-4 float-left">
+                <a href="level2.html">
+                    <button class="btn btn-danger btn-lg">Back</button>
+                </a>
+            </div>
+            <div class="mt-4 float-right">
+                <a href="speak.html">
+                    <button class="btn btn-success flash-button btn-lg">Speak Now!</button>
+                </a>
+            </div>
+    </div>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 1</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    Michel : “Sorry sir, do not smoke in here, because it cause a fire!”<a href="#"
+                        onclick='speaknow(11);' class="text-success">🔉</a><br>
+                    John : “Oh yes, I forgot. Yes I have turn off his cigarette.”<a href="#" onclick='speaknow(12);'
+                        class="text-success">🔉</a><br>
+                    Michel : ”Oke sir, thank you.”<a href="#" onclick='speaknow(13);' class="text-success">🔉</a><br>
+                    John : ”It’s oke.”<a href="#" onclick='speaknow(14);' class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 2</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    Delia :”Mr.. I am sorry, do not park here.”<a href="#" onclick='speaknow(21);'
+                        class="text-success">🔉</a><br>
+                    Farhan :”Why?”<a href="#" onclick='speaknow(22);' class="text-success">🔉</a><br>
+                    Delia :"Because this is not a parking area?"<a href="#" onclick='speaknow(23);'
+                        class="text-success">🔉</a><br>
+                    Farhan :”Oke, no problem.”<a href="#" onclick='speaknow(24);' class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLongTitle">Dialogue 3</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size: 20px;">
+                    Richa :”Hallo sweetie.”<a href="#" onclick='speaknow(31);' class="text-success">🔉</a><br>
+                    Erin :”Hallo miss Richa.”<a href="#" onclick='speaknow(32);' class="text-success">🔉</a><br>
+                    Richa :”Where is your mom?”<a href="#" onclick='speaknow(33);' class="text-success">🔉</a><br>
+                    Erin :”My mom is working in an office.”<a href="#" onclick='speaknow(34);'
+                        class="text-success">🔉</a><br>
+                    Richa :”Oh, oke. Erin do not hold this cup, because it is hot.”<a href="#" onclick='speaknow(35);'
+                        class="text-success">🔉</a><br>
+                    Erin :”Oke, thank you miss Richa.”<a href="#" onclick='speaknow(36);'
+                        class="text-success">🔉</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function speaknow(d) {
+            var dialM, dialF;
+            switch (d) {
+                case 11:
+                    dialM = "Sorry sir, do not smoke in here, because it cause a fire!";
+                    break;
+                case 12:
+                    dialM = "Oh yes, I forgot. Yes I have turn off his cigarette.";
+                    break;
+                case 13:
+                    dialM = "Okay sir, thank you.";
+                    break;
+                case 14:
+                    dialM = "It’s okay.";
+                    break;
+                case 21:
+                    dialF = "Mr. I am sorry, do not park here.";
+                    break;
+                case 22:
+                    dialM = "Why?";
+                    break;
+                case 23:
+                    dialF = "Because this is not a parking area?";
+                    break;
+                case 24:
+                    dialM = "Okay, no problem.";
+                    break;
+                case 31:
+                    dialF = "Hallo sweetie.";
+                    break;
+                case 32:
+                    dialF = "Hallo miss Richa.";
+                    break;
+                case 33:
+                    dialF = "Where is your mom?";
+                    break;
+                case 34:
+                    dialF = "My mom is working in an office";
+                    break;
+                case 35:
+                    dialF = "Oh, oke. Erin do not hold this cup, because it is hot.";
+                    break;
+                case 36:
+                    dialF = "Oke, thank you miss Richa.";
+                    break;
+                default:
+                    dialM = "Please choose the right button!";
+                    break;
+            }
+            responsiveVoice.speak(dialM, "US English Male");
+            responsiveVoice.speak(dialF, "US English Female");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
